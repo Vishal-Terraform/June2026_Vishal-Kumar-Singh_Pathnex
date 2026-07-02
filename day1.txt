@@ -1,6 +1,6 @@
-# Day 01 — Basics
+Day 01 — Basics
 
-## 🔹 Ansible Task — Install Nginx on Pathnex Server
+Ansible Task — Install Nginx on Pathnex Server
 
 Rewrite this YAML manually:
 
@@ -16,7 +16,7 @@ Rewrite this YAML manually:
         state: present
 
 
-## 🔹 Terraform Task — Create EC2 (c5.xlarge)
+Terraform Task — Create EC2 (c5.xlarge)
 
 provider "aws" {
   region = "us-east-1"
@@ -32,7 +32,7 @@ resource "aws_instance" "PathnexEC2" {
 }
 
 
-## 🔹 Kubernetes Task — Create Nginx Pod
+Kubernetes Task — Create Nginx Pod
 
 apiVersion: v1
 kind: Pod
@@ -46,15 +46,15 @@ spec:
         - containerPort: 80
 
 
-## 🔹 Shell Script — Print Date & Hostname
+Shell Script — Print Date & Hostname
 
-#!/bin/bash
+/bin/bash
 echo "Date: $(date)"
 echo "Hostname: $(hostname)"
 
 
-# Git Integration
-## 🔹 Jenkins Pipeline — Checkout Git
+Git Integration
+Jenkins Pipeline — Checkout Git
 You will learn how to **checkout a Git repository** and list files.
 
 pipeline {
@@ -73,7 +73,7 @@ pipeline {
     }
 }
 
-## 🔹 GitLab CI — Checkout Git
+GitLab CI — Checkout Git
 You will learn how to **checkout a Git repository in GitLab CI**.
 
 stages:
